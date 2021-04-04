@@ -1,0 +1,75 @@
+$window-controls-text-color: #171717
+$window-controls-passive-text-color: #999999
+$window-controls-hover-bg-color: #e6e6e6
+$window-close-hover-bg-color: #e81123
+    
+#title
+    height: 30px
+    font-size: 0
+
+    #app-icon
+        -webkit-app-region: drag
+        display: inline-block
+        width: 35px
+        height: 100%
+    
+    #title-menu
+        display: inline-block
+        width: calc(100% - 173px)
+        height: 100%
+
+        #menubar
+            display: inline-block
+            height: 100%
+            width: 50%
+
+        #window-title
+            display: inline-block
+            height: 100%
+            width: 50%
+            -webkit-app-region: drag
+
+    #window-controls
+        width: 138px
+        height: 100%
+        display: inline-block
+        font-family: codicon
+        text-align: center
+        vertical-align: top
+
+        div
+            height: 100%
+            width: 46px
+            display: inline-block
+            padding-top: 3px
+
+            &:hover
+                background: $window-controls-hover-bg-color    
+
+            &::before
+                font-size: 16px
+                color: $window-controls-text-color
+                
+
+        #window-minimize
+            &::before
+                content: "\eaba"
+
+        #window-max-restore
+            &.window-maximize
+                &::before
+                    content: "\eabb"
+
+            &::before
+                content: "\eab9"
+                
+        #window-close
+            &:hover
+                background: $window-close-hover-bg-color
+                &::before
+                    color: white
+
+            &::before
+                content: "\eab8"
+
+                

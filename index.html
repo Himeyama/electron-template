@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="codicon/codicon.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.4.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0/bootstrap.min.css">
+    <link rel="stylesheet" href="window/window.css">
+
+</head>
+<body style="background: white;">
+    <nav id="title">
+        <a id="app-icon"></a>
+        <div id="title-menu">
+            <div id="menubar"></div>
+            <div id="window-title"></div>
+        </div>
+        <div id="window-controls">
+            <div id="window-minimize"></div>
+            <div id="window-max-restore"></div>
+            <div id="window-close"></div>
+        </div>
+    </nav>
+    <script src="window/window.js"></script>
+
+    <h1>Hello World!</h1>
+    <p>
+        We are using Node.js <span id="node-version"></span>,
+        Chromium <span id="chrome-version"></span>,
+        and Electron <span id="electron-version"></span>.
+    </p>
+    <script src="index.js"></script>
+</body>
+</html>

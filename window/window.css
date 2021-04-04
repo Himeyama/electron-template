@@ -1,0 +1,53 @@
+@charset "UTF-8";
+#title {
+  height: 30px;
+  font-size: 0; }
+  #title #app-icon {
+    -webkit-app-region: drag;
+    display: inline-block;
+    width: 35px;
+    height: 100%; }
+  #title #title-menu {
+    display: inline-block;
+    width: calc(100% - 173px);
+    height: 100%; }
+    #title #title-menu #menubar {
+      display: inline-block;
+      height: 100%;
+      width: 50%; }
+    #title #title-menu #window-title {
+      display: inline-block;
+      height: 100%;
+      width: 50%;
+      -webkit-app-region: drag; }
+  #title #window-controls {
+    width: 138px;
+    height: 100%;
+    display: inline-block;
+    font-family: codicon;
+    text-align: center;
+    vertical-align: top; }
+    #title #window-controls div {
+      height: 100%;
+      width: 46px;
+      display: inline-block;
+      padding-top: 3px; }
+      #title #window-controls div:hover {
+        background: #e6e6e6; }
+      #title #window-controls div::before {
+        font-size: 16px;
+        color: #171717; }
+    #title #window-controls #window-minimize::before {
+      content: ""; }
+    #title #window-controls #window-max-restore.window-maximize::before {
+      content: ""; }
+    #title #window-controls #window-max-restore::before {
+      content: ""; }
+    #title #window-controls #window-close:hover {
+      background: #e81123; }
+      #title #window-controls #window-close:hover::before {
+        color: white; }
+    #title #window-controls #window-close::before {
+      content: ""; }
+
+/*# sourceMappingURL=window.css.map */
