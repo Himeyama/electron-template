@@ -3,6 +3,7 @@ const path = require("path")
 
 function createWindow() {
     let win = new BrowserWindow({
+        radii: [1, 1, 1, 1],
         width: 800,
         height: 600,
         frame: false,

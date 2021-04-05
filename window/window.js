@@ -1,36 +1,65 @@
 let titleDOM = document.createElement("div")
+let appIcon = document.createElement("a")
+let titleMenu = document.createElement("div")
+let windowControls = document.createElement("div")
+let windowMinimize = document.createElement("div")
+let windowMaxRestore = document.createElement("div")
+let windowClose = document.createElement("div")
+let menubar = document.createElement("nav")
+let windowTitle = document.createElement("div")
+
 document.body.prepend(titleDOM)
+titleDOM.append(appIcon)
+titleDOM.append(titleMenu)
+titleDOM.append(windowControls)
+titleMenu.append(menubar)
+titleMenu.append(windowTitle)
+windowControls.append(windowMinimize)
+windowControls.append(windowMaxRestore)
+windowControls.append(windowClose)
+
 titleDOM.id = "title"
-titleDOM.innerHTML = `
-<a id="app-icon"></a>
-<div id="title-menu">
-    <nav id="menubar">
-        <div class="dropdown">
-            <button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
-                ファイル(F)
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="files">
-                <li><a class="dropdown-item" href="#">印刷</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">終了</a></li>
-            </ul>
-            <button class="btn" type="button" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
-                編集(E)
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="edit">
-                <li><a class="dropdown-item" href="#">コピー</a></li>
-                <li><a class="dropdown-item" href="#">切り取り</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="window-title">タイトル</div>
-</div>
-<div id="window-controls">
-    <div id="window-minimize"></div>
-    <div id="window-max-restore"></div>
-    <div id="window-close"></div>
-</div>
-`
+appIcon.id = "app-icon"
+titleMenu.id = "title-menu"
+windowControls.id = "window-controls"
+windowMinimize.id = "window-minimize"
+windowMaxRestore.id = "window-max-restore"
+windowClose.id = "window-close"
+menubar.id = "menubar"
+windowTitle.id = "window-title"
+
+windowTitle.innerText = "タイトル"
+
+// titleDOM.innerHTML = `
+// <a id="app-icon"></a>
+// <div id="title-menu">
+//     <nav id="menubar">
+//         <div class="dropdown">
+//             <button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
+//                 ファイル(F)
+//             </button>
+//             <ul class="dropdown-menu" aria-labelledby="files">
+//                 <li><a class="dropdown-item" href="#">印刷</a></li>
+//                 <li><hr class="dropdown-divider"></li>
+//                 <li><a class="dropdown-item" href="#">終了</a></li>
+//             </ul>
+//             <button class="btn" type="button" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
+//                 編集(E)
+//             </button>
+//             <ul class="dropdown-menu" aria-labelledby="edit">
+//                 <li><a class="dropdown-item" href="#">コピー</a></li>
+//                 <li><a class="dropdown-item" href="#">切り取り</a></li>
+//             </ul>
+//         </div>
+//     </nav>
+//     <div id="window-title">タイトル</div>
+// </div>
+// <div id="window-controls">
+//     <div id="window-minimize"></div>
+//     <div id="window-max-restore"></div>
+//     <div id="window-close"></div>
+// </div>
+// `
 
 
 window.electron.on("window-maximize", () => {
