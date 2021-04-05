@@ -2,8 +2,21 @@ $window-controls-text-color: #171717
 $window-controls-passive-text-color: #999999
 $window-controls-hover-bg-color: #e6e6e6
 $window-close-hover-bg-color: #e81123
+$window-menu-bg-color: #fafbfc
     
+
+body
+    overflow: hidden
+
+main
+    margin-top: 30px
+    overflow: auto
+    height: 100vh
+
 #title
+    position: fixed
+    top: 0
+    width: 100%
     height: 30px
     font-size: 0
 
@@ -17,17 +30,44 @@ $window-close-hover-bg-color: #e81123
         display: inline-block
         width: calc(100% - 173px)
         height: 100%
+        vertical-align: top
 
         #menubar
             display: inline-block
             height: 100%
-            width: 50%
+            vertical-align: top
 
+            .dropdown
+
+                button
+                    font-size: 13px
+                    padding: 4.5px 8px
+                    &:focus
+                        background: $window-controls-hover-bg-color
+                        box-shadow: unset
+                        border-radius: unset
+                ul
+                    font-size: 13px
+                    background: $window-menu-bg-color
+                    border-radius: unset
+                    border: unset
+                    width: 280px
+                    li
+                        hr
+                            margin: 8px 12px
+                        a
+                            padding: 2.5px 24px
+                            &:hover
+                                background: $window-controls-hover-bg-color
         #window-title
+            font-size: 12px
             display: inline-block
             height: 100%
-            width: 50%
             -webkit-app-region: drag
+            vertical-align: top
+            text-align: center
+            line-height: 30px
+            user-select: none
 
     #window-controls
         width: 138px

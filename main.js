@@ -24,7 +24,13 @@ function createWindow() {
     })
 
     ipcMain.on("window-maximize", () => {
-        win.isMaximized() ? win.unmaximize() : win.maximize()
+        if(win.isMaximized()){
+            win.unmaximize()
+            win.webContents.send("window-unmaximize")
+        }else{
+            win.maximize()
+            win.webContents.send("window-maximize")
+        }
     })
 
     ipcMain.on("window-close", () => {
