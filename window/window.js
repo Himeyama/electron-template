@@ -35,36 +35,26 @@ dropDown.classList.add("dropDown")
 
 windowTitle.innerText = "タイトル"
 
-// titleDOM.innerHTML = `
-// <a id="app-icon"></a>
-// <div id="title-menu">
-//     <nav id="menubar">
-//         <div class="dropdown">
-//             <button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
-//                 ファイル(F)
-//             </button>
-//             <ul class="dropdown-menu" aria-labelledby="files">
-//                 <li><a class="dropdown-item" href="#">印刷</a></li>
-//                 <li><hr class="dropdown-divider"></li>
-//                 <li><a class="dropdown-item" href="#">終了</a></li>
-//             </ul>
-//             <button class="btn" type="button" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
-//                 編集(E)
-//             </button>
-//             <ul class="dropdown-menu" aria-labelledby="edit">
-//                 <li><a class="dropdown-item" href="#">コピー</a></li>
-//                 <li><a class="dropdown-item" href="#">切り取り</a></li>
-//             </ul>
-//         </div>
-//     </nav>
-//     <div id="window-title">タイトル</div>
-// </div>
-// <div id="window-controls">
-//     <div id="window-minimize"></div>
-//     <div id="window-max-restore"></div>
-//     <div id="window-close"></div>
-// </div>
-// `
+dropDown.innerHTML = `
+<button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
+    ファイル(F)
+</button>
+<ul class="dropdown-menu" aria-labelledby="files">
+    <li><a class="dropdown-item" href="#">印刷</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">終了</a></li>
+</ul>
+
+<button class="btn" type="button" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
+    編集(E)
+</button>
+<ul class="dropdown-menu" aria-labelledby="edit">
+    <li><a class="dropdown-item" href="#">コピー</a></li>
+    <li><a class="dropdown-item" href="#">切り取り</a></li>
+</ul>
+`
+
+
 
 
 window.electron.on("window-maximize", () => {

@@ -27,24 +27,24 @@ main {
       display: inline-block;
       height: 100%;
       vertical-align: top; }
-      #title #title-menu #menubar .dropdown button {
+      #title #title-menu #menubar .dropDown button {
         font-size: 13px;
-        padding: 4.5px 8px; }
-        #title #title-menu #menubar .dropdown button:focus {
+        padding: 4.4px 8px; }
+        #title #title-menu #menubar .dropDown button:focus {
           background: #e6e6e6;
           box-shadow: unset;
           border-radius: unset; }
-      #title #title-menu #menubar .dropdown ul {
+      #title #title-menu #menubar .dropDown ul {
         font-size: 13px;
         background: #fafbfc;
         border-radius: unset;
         border: unset;
         width: 280px; }
-        #title #title-menu #menubar .dropdown ul li hr {
+        #title #title-menu #menubar .dropDown ul li hr {
           margin: 8px 12px; }
-        #title #title-menu #menubar .dropdown ul li a {
+        #title #title-menu #menubar .dropDown ul li a {
           padding: 2.5px 24px; }
-          #title #title-menu #menubar .dropdown ul li a:hover {
+          #title #title-menu #menubar .dropDown ul li a:hover {
             background: #e6e6e6; }
     #title #title-menu #window-title {
       font-size: 12px;
