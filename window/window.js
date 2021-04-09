@@ -37,20 +37,17 @@ windowTitle.innerText = "タイトル"
 
 dropDown.innerHTML = `
 <button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
-    ファイル(F)
+    ファイル
 </button>
 <ul class="dropdown-menu" aria-labelledby="files">
-    <li><a class="dropdown-item" href="#">印刷</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">終了</a></li>
+    <li><a class="dropdown-item" href="#" onclick="window.electron.windowClose()">終了</a></li>
 </ul>
 
 <button class="btn" type="button" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
-    編集(E)
+    編集
 </button>
 <ul class="dropdown-menu" aria-labelledby="edit">
-    <li><a class="dropdown-item" href="#">コピー</a></li>
-    <li><a class="dropdown-item" href="#">切り取り</a></li>
+    <li><hr class="dropdown-divider"></li>
 </ul>
 `
 
