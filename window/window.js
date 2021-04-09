@@ -19,11 +19,7 @@ titleMenu.append(windowTitle)
 windowControls.append(windowMinimize)
 windowControls.append(windowMaxRestore)
 windowControls.append(windowClose)
-<<<<<<< HEAD
 menubar.append(dropDown)
-=======
-menubar.append(dropdown)
->>>>>>> 9a673b0bd4a7c44538b45b1b1e20d55a69c8296e
 
 titleDOM.id = "title"
 appIcon.id = "app-icon"
