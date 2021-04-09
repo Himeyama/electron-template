@@ -7,6 +7,7 @@ let windowMaxRestore = document.createElement("div")
 let windowClose = document.createElement("div")
 let menubar = document.createElement("nav")
 let windowTitle = document.createElement("div")
+let dropDown = document.createElement("div")
 
 document.body.prepend(titleDOM)
 titleDOM.append(appIcon)
@@ -17,6 +18,7 @@ titleMenu.append(windowTitle)
 windowControls.append(windowMinimize)
 windowControls.append(windowMaxRestore)
 windowControls.append(windowClose)
+menubar.append(dropDown)
 
 titleDOM.id = "title"
 appIcon.id = "app-icon"
@@ -27,6 +29,7 @@ windowMaxRestore.id = "window-max-restore"
 windowClose.id = "window-close"
 menubar.id = "menubar"
 windowTitle.id = "window-title"
+dropDown.classList.add("dropDown")
 
 windowTitle.innerText = "タイトル"
 
