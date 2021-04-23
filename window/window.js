@@ -33,7 +33,7 @@ dropdown.classList.add("dropdown")
 windowTitle.id = "window-title"
 dropDown.classList.add("dropDown")
 
-windowTitle.innerText = "タイトル"
+windowTitle.innerText = document.getElementsByTagName("title")[0].innerText
 
 dropDown.innerHTML = `
 <button class="btn" type="button" id="files" data-bs-toggle="dropdown" aria-expanded="false">
