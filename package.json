@@ -4,7 +4,8 @@
     "description": "",
     "main": "main.js",
     "scripts": {
-        "start": "sass window/window.sass:window/window.css && electron ."
+        "start": "electron .",
+        "sass": "sass window/window.sass:window/window.css && sass window/window.color.sass:window/window.color.css && sass window/window.color.dark.sass:window/window.color.dark.css"
     },
     "keywords": [],
     "author": "",
