@@ -1,10 +1,3 @@
-$window-controls-text-color: #171717
-$window-controls-passive-text-color: #999999
-$window-controls-hover-bg-color: #e6e6e6
-$window-close-hover-bg-color: #e81123
-$window-menu-bg-color: #fafbfc
-    
-
 body
     overflow: hidden
 
@@ -42,13 +35,12 @@ main
                 button
                     font-size: 13px
                     padding: 4.25px 8px
+                    border-radius: unset
                     &:focus
-                        background: $window-controls-hover-bg-color
                         box-shadow: unset
                         border-radius: unset
                 ul
                     font-size: 13px
-                    background: $window-menu-bg-color
                     border-radius: unset
                     border: unset
                     width: 280px
@@ -57,8 +49,6 @@ main
                             margin: 8px 12px
                         a
                             padding: 2.5px 24px
-                            &:hover
-                                background: $window-controls-hover-bg-color
                             &:active
                                 color: unset
                             .key
@@ -90,12 +80,8 @@ main
             display: inline-block
             padding-top: 3px
 
-            &:hover
-                background: $window-controls-hover-bg-color    
-
             &::before
                 font-size: 16px
-                color: $window-controls-text-color
                 
 
         #window-minimize
@@ -112,11 +98,7 @@ main
                 
         #window-close
             &:hover
-                background: $window-close-hover-bg-color
-                &::before
-                    color: white
+                background: #e81123
 
             &::before
                 content: "\eab8"
-
-                
