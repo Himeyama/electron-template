@@ -19,6 +19,7 @@ main
     width: 100%
     height: 30px
     font-size: 0
+    z-index: 1000
 
     #app-icon
         -webkit-app-region: drag
@@ -58,6 +59,13 @@ main
                             padding: 2.5px 24px
                             &:hover
                                 background: $window-controls-hover-bg-color
+                            &:active
+                                color: unset
+                            .key
+                                text-align: right
+                            .item
+                                float: left
+
         #window-title
             font-size: 12px
             display: inline-block
